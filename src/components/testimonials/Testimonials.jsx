@@ -1,6 +1,8 @@
 import React from "react";
 import "./testimonial.css";
 import { Data } from "./Data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -36,13 +38,14 @@ const Testimonials = () => {
         }}
         modules={[Pagination]}
       >
-        {Data.map(({ id, image, title, description }) => {
+        {Data.map(({ id, image, title, description, rank }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
               <img src={image} alt="" className="testimonial__img" />
-
-              <h3 className="testimonial__name">{title}</h3>
               <p className="testimonial__description">{description}</p>
+              <h3 className="testimonial__name">{title}</h3>
+              <h4 className="testimonial-rank">{rank}</h4>
+              <FontAwesomeIcon className="quote" icon={faQuoteLeft} />
             </SwiperSlide>
           );
         })}

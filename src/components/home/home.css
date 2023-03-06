@@ -2,6 +2,47 @@
   row-gap: 7rem;
 }
 
+.nav__logo {
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+  font-family: 40px;
+
+  font-weight: 700;
+
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.nav__logo span {
+  font-family: "Clicker Script", cursive;
+  font-weight: 600;
+  font-family: 60px;
+  color: rgba(80, 4, 21, 0.87);
+}
+
+.nav__logo::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #b2bec3;
+  border-left: 5px solid #b2bec3;
+  bottom: 0;
+  left: 0;
+}
+
+.nav__logo::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #91b4d6;
+  border-right: 5px solid #889094;
+  top: -2;
+  right: 0;
+}
+
 .home__content {
   grid-template-columns: 116px repeat(2, 1fr);
   padding-top: 5.5rem;
@@ -18,15 +59,45 @@
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--title-color);
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  display: inline-block;
+
+  padding-left: 4.8px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.instagram {
+  color: #fff;
+  background: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.dribbble {
+  background: #ddd8d8;
+  color: #ea4c89;
+}
+
+.linkedin {
+  color: #0072b1;
+  background: white;
+  font-size: 1.75rem;
+}
+
+.github {
+  font-size: 1.75rem;
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  transform: scale(1.1);
 }
 
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-0-25);
+  line-height: 1.2;
 }
 
 .home__subtitle {
@@ -161,6 +232,11 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .nav__logo {
+    padding: 3px 8px;
+  }
+}
 /* Small Devices*/
 @media screen and (max-width: 350px) {
   .home__img {

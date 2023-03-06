@@ -17,6 +17,25 @@
   margin-bottom: var(--mb-2);
 }
 
+.footer__title {
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+  font-family: 40px;
+
+  font-weight: 700;
+
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.footer__title span {
+  font-family: "Clicker Script", cursive;
+  font-weight: 600;
+  font-family: 60px;
+  color: rgba(80, 4, 21, 0.87);
+}
+
 .footer__link:hover {
   color: var(--title-color-dark);
 }

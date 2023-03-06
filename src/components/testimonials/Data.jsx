@@ -1,6 +1,6 @@
-import Image1 from "../../assets/testimonial1.jpg";
-import Image2 from "../../assets/testimonial2.jpg";
-import Image3 from "../../assets/testimonial3.jpg";
+import Image1 from "../../assets/customer-3.jpg";
+import Image2 from "../../assets/customer-2.jpg";
+import Image3 from "../../assets/customer-1.jpg";
 
 export const Data = [
   {
@@ -9,6 +9,7 @@ export const Data = [
     title: "Sarah Cill",
     description:
       "A really good job, all aspects of the project were followed step by step and with good results.",
+    rank: "Finance Advisor",
   },
 
   {
@@ -17,6 +18,7 @@ export const Data = [
     title: "John Doe",
     description:
       "A really good job, all aspects of the project were followed step by step and with good results.",
+    rank: "Finance Advisor",
   },
 
   {
@@ -25,5 +27,6 @@ export const Data = [
     title: "Michael Khan",
     description:
       "A really good job, all aspects of the project were followed step by step and with good results.",
+    rank: "Finance Advisor",
   },
 ];

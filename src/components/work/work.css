@@ -295,6 +295,34 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .work__container {
+    grid-template-columns: max-content;
+  }
+
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+
+  .project__modal-content {
+    gap: 0.25rem;
+  }
+
+  .project__modal {
+    padding: 0;
+  }
+
+  .modal__buttons {
+    margin-top: 0.25rem;
+    margin-left: 0;
+    gap: 6rem;
+  }
+}
+
 /* Small Devices*/
 @media screen and (max-width: 355px) {
   .work__container {
