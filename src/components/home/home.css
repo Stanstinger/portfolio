@@ -83,10 +83,12 @@
   color: #0072b1;
   background: white;
   font-size: 1.75rem;
+  padding-left: 0;
 }
 
 .github {
   font-size: 1.75rem;
+  padding-left: 0;
 }
 
 .home__social-icon:hover {

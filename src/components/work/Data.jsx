@@ -8,7 +8,7 @@ export const projectsData = [
     id: 1,
     image: Work1,
     totalLike: "600",
-    title: "The services provide for design",
+    title: "Banking App Dashbord",
     category: "WEB",
   },
 

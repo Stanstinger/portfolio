@@ -9,21 +9,23 @@ const WorkItems = ({ item }) => {
   return (
     <>
       <div className="work__card" key={item.id}>
-        <figure className="image-item">
-          <img
-            src={item.image}
-            alt=""
-            onClick={toggleModal}
-            className="work__img"
-          />
-        </figure>
-        <h3 className="work__title" onClick={toggleModal}>
-          {item.title}
-        </h3>
-        <span className="work__button" onClick={toggleModal}>
-          View Details
-          <i className="uil uil-arrow-right work__button-icon"></i>
-        </span>
+        {/* <figure className="image-item"> */}
+        <img
+          src={item.image}
+          alt=""
+          onClick={toggleModal}
+          className="work__img"
+        />
+        {/* </figure> */}
+        <div className="work-content">
+          <h3 className="work__title" onClick={toggleModal}>
+            {item.title}
+          </h3>
+          <span className="work__button" onClick={toggleModal}>
+            View Details
+            <i className="uil uil-arrow-right work__button-icon"></i>
+          </span>
+        </div>
       </div>
       {/** POPUP MODAL */}
       {modal && (

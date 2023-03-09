@@ -2,6 +2,45 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
+//toast
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const success = () => {
+  var Name = document.getElementById("name");
+  var email = document.getElementById("email");
+  var msg = document.getElementById("msg");
+  const success = document.getElementById("success");
+  const danger = document.getElementById("danger");
+
+  if (Name.value === "" || email.value === "" || msg.value === "") {
+    danger.style.display = "block";
+  } else {
+    setTimeout(() => {
+      Name.value = "";
+      email.value = "";
+      msg.value = "";
+    }, 2000);
+
+    success.style.display = "block";
+    toast.success("Your Message Succesfully Sent!", {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  }
+
+  setTimeout(() => {
+    danger.style.display = "none";
+    success.style.display = "none";
+  }, 4000);
+};
+
 const Contact = () => {
   const form = useRef();
 
@@ -77,20 +116,24 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
+
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
+                id="name"
                 placeholder="Insert your name"
               />
             </div>
 
             <div className="contact__form-div">
               <label className="contact__form-tag">Mail</label>
+
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
+                id="email"
                 placeholder="Insert your email"
               />
             </div>
@@ -102,11 +145,23 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
+                id="msg"
                 placeholder="Write your project"
               ></textarea>
             </div>
 
-            <button className="button button--flex">Send Message</button>
+            <button className="button button--flex" onClick={success}>
+              Send Message
+            </button>
+            <div className="message">
+              <div className="success" id="success">
+                Your Message Successfully Sent!
+              </div>
+              <div class="danger" id="danger">
+                Feilds Can't be Empty!
+              </div>
+            </div>
+            <ToastContainer />
           </form>
         </div>
       </div>
