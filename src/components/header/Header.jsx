@@ -27,7 +27,7 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#home"
-                onClick={() => setActiveNav("#home")}
+                onClick={() => showMenu(!Toggle)}
                 className={
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
@@ -39,7 +39,7 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#about"
-                onClick={() => setActiveNav("#about")}
+                onClick={() => showMenu(!Toggle)}
                 className={
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
@@ -51,7 +51,7 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#skills"
-                onClick={() => setActiveNav("#skills")}
+                onClick={() => showMenu(!Toggle)}
                 className={
                   activeNav === "#skills"
                     ? "nav__link active-link"
@@ -65,7 +65,7 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#services"
-                onClick={() => setActiveNav("#services")}
+                onClick={() => showMenu(!Toggle)}
                 className={
                   activeNav === "#services"
                     ? "nav__link active-link"
@@ -79,7 +79,7 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#portfolio"
-                onClick={() => setActiveNav("#portfolio")}
+                onClick={() => showMenu(!Toggle)}
                 className={
                   activeNav === "#portfolio"
                     ? "nav__link active-link"
@@ -93,7 +93,8 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#contact"
-                onClick={() => setActiveNav("#contact")}
+                onClick={() => showMenu(!Toggle)}
+                // onClick={() => setActiveNav("#contact")}
                 className={
                   activeNav === "#contact"
                     ? "nav__link active-link"

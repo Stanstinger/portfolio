@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 //toast
 import { ToastContainer, toast } from "react-toastify";
@@ -152,6 +154,7 @@ const Contact = () => {
 
             <button className="button button--flex" onClick={success}>
               Send Message
+              <FontAwesomeIcon className="msg-icon" icon={faPaperPlane} />
             </button>
             <div className="message">
               <div className="success" id="success">

@@ -44,6 +44,10 @@
   margin-bottom: var(--mb-2-5);
 }
 
+.uil-file-download-alt {
+  font-size: 1.2rem;
+}
+
 /*========  BREAKPOINTS =====*/
 /* Large Devices*/
 @media screen and (max-width: 992px) {
