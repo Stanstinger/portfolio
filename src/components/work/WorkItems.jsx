@@ -39,24 +39,20 @@ const WorkItems = ({ item }) => {
               <span className="subtitle"> Featured - Design</span>
               <h1 className="project__modal-title">{item.title}</h1>
               <div className="project__description">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam suscipit voluptatem excepturi error neque, a quisquam
-                  culpa magni?
-                </p>
-                <p>Voluptates laborum consequatur minima eos non quia fugit</p>
+                <p>{item.description}</p>
+                <p>{item.stacks}</p>
               </div>
 
               <div className="modal__buttons">
-                <button className="btn-modal">
-                  LIKE <i className="bx bxs-heart project__modal-icon"></i>
-                </button>
+                <a href={item.codelink} className="btn-modal">
+                  GitHub
+                  <i class="uil uil-github"></i>
+                </a>
 
-                <button className="btn-modal">
-                  Demo
+                <a href={item.weblink} className="btn-modal">
+                  DEMO
                   <i className="bx bx-chevron-right project__modal-icon"></i>
-                </button>
+                </a>
               </div>
 
               <button className="project__modal-close" onClick={toggleModal}>

@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
-import ProfileImg from "../../assets/customer-2.jpg";
+import ProfileImg from "../../assets/stanley.jpg";
 
 const Home = () => {
   return (

@@ -98,11 +98,9 @@
 /* Medium Devices*/
 @media screen and (max-width: 768px) {
   .nav {
-    width: 90%;
     height: var(--header-height);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-right: 1rem;
   }
 
   .nav__icon,

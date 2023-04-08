@@ -20,7 +20,7 @@ const Social = () => {
       </a>
 
       <a
-        href="https://github.com/"
+        href="https://github.com/Stanstinger/"
         className="home__social-icon  github"
         target="_blank"
       >
@@ -28,7 +28,7 @@ const Social = () => {
       </a>
 
       <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/in/stanley-njuguna-a81910205"
         className="home__social-icon linkedin"
         target="_blank"
       >
